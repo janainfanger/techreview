@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+{% block content %}
+<h2>Tech Types</h2>
+<p>Here are a bunch of the types of tech we offer! </p>
+<table class='table'>
+<tr>
+    <th>Name    </th>
+    <th>Description</th>
+{%for item in type_list  %}
+    <tr>
+         <td>{{ item.typename }}</td>>
+         <td>{{ item.typedescription }}</td>>
+
+    </tr>
+
+{% endfor %}
+
+</tr>>
+
+
+</table>
+
+<!--Here is a comment-->
+<p>Under construction!</p>
+
+{% endblock %}
